@@ -1,0 +1,24 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", :integrity => "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", :crossorigin => "anonymous"}
+    %title Inkoop Torrent Downloader
+  %body
+    %br
+    .container
+      .row
+        .col-md-12
+          .jumbotron
+            %h1 Inkoop Torrent Downloader
+            %p Enter a torrent url
+            %p
+              %form.form-horizontal{:method => "post", :action => "/torrents"}
+                .form-group
+                  .col-md-10
+                    %input.form-control{:placeholder => "Magnet Link", :type => "text", :name => "torrent"}
+                  .col-md-2
+                    %button.btn.btn-default{:type => "submit"} Download
+
