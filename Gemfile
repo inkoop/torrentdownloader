@@ -6,4 +6,5 @@ gem 'sinatra'
 gem 'haml'
 gem 'redis'
 gem 'sidekiq', require: false
+gem 'thin'
 
